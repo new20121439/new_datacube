@@ -1,0 +1,41 @@
+name: sentinel_2_l2a
+description: Sentinel-2 LEVEL 2A
+metadata_type: eo
+
+metadata:
+  format: {name: GeoTIFF}
+  instrument: {name: MSI}
+  platform: {code: SENTINEL_2}
+  product_type: S2MSI2A
+  processing_level: Level-2A
+
+storage:
+  crs: EPSG:4326
+#  resolution:
+#           x: 10
+#           y: 10
+
+measurements:
+- name: 'Green'
+  aliases: [band_01, B02, Band1]
+  units: '1'
+  dtype: int16
+  nodata: 0
+
+- name: 'Blue'
+  aliases: [band_02, B03, Band2]
+  units: '1'
+  dtype: int16
+  nodata: 0
+
+- name: 'Red'
+  aliases: [band_03, B04, Band3]
+  units: '1'
+  dtype: int16
+  nodata: 0
+
+- name: 'NIR'
+  aliases: [band_04, B08, Band4]
+  units: '1'
+  dtype: int16
+  nodata: 0

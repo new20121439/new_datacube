@@ -1,0 +1,35 @@
+name: uav_30cm
+description: UAV 30cm from Skymap Global
+metadata_type: eo
+
+metadata:
+  format: {name: GeoTIFF}
+  instrument: {name: UAV}
+  platform: {code: UAV}
+  product_type: uav_30cm
+  processing_level: uav
+
+storage:
+  crs: EPSG:4326
+#  resolution:
+#           x: 0.3
+#           y: 0.3
+
+measurements:
+- name: 'Green'
+  aliases: [band_01, B02, Band1]
+  units: '1'
+  dtype: int8
+  nodata: 0
+
+- name: 'Blue'
+  aliases: [band_02, B03, Band2]
+  units: '1'
+  dtype: int8
+  nodata: 0
+
+- name: 'Red'
+  aliases: [band_03, B04, Band3]
+  units: '1'
+  dtype: int8
+  nodata: 0

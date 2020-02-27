@@ -1,0 +1,29 @@
+name: sentinel_1_grd_50m_beta0
+description: Sentinel-1A SAR IW GRD-HD-50M-BETA0
+metadata_type: eo
+
+metadata:
+  format: {name: GeoTIFF}
+  instrument: {name: SAR}
+  platform: {code: SENTINEL_1A}
+  product_type: GRD
+  processing_level: Level-1
+
+storage:
+  crs: EPSG:4326
+#  resolution:
+#           x: 50
+#           y: 50
+
+measurements:
+- name: 'vh'
+  aliases: [band_01, B01, Band1]
+  units: '1'
+  dtype: float32
+  nodata: 0
+
+- name: 'vv'
+  aliases: [band_02, B02, Band2]
+  units: '1'
+  dtype: float32
+  nodata: 0
