@@ -30,7 +30,7 @@ dask==2.10.1
 -e git+https://github.com/opendatacube/datacube-core.git@98cf9ba35d90bdc582dce6b399dc4ba274676bca#egg=datacube
 decorator==4.4.1
 defusedxml==0.6.0
-Django==3.0
+Django==3.0.7
 django-celery-beat==1.6.0
 django-cors-headers==3.2.1
 django-extensions==2.2.8

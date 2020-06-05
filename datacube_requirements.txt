@@ -57,7 +57,7 @@ dask==2.5.2
 decorator==4.4.0
 defusedxml==0.6.0
 distributed==2.5.2
-Django==3.0
+Django==3.0.7
 django-bootstrap3==12.0.3
 django-celery-beat==1.6.0
 django-timezone-field==3.1
